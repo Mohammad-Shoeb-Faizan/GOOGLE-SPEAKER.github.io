@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto' ;
+}
+
+body{
+    height: 100vh;
+    color: white;
+    animation: bgcolor infinite 50s;     /* TO EXPERIENCE MULTIPLE COLORS */
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 15vh;
+    width: 95%;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-around;
+}
+
+header ul li{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header ul img{
+    height: 2rem;
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+main{
+    height: 85%;
+    display: flex;
+}
+
+/* LEFT section CSS */
+
+main .left{
+    width: 35%;
+}
+
+main .left .top p{
+    writing-mode: vertical-lr;
+}
+
+main .left h1{
+    font-size: 6rem;
+    margin-left: 3rem;
+    font-family: 'Lato';
+}
+
+main .left .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .left .bottom{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .left .bottom p{
+    font-size: 3rem;
+}
+
+main .left .bottom h3{
+    font-size: 1.3rem;
+}
+
+.limited{
+    background: #212121;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    right: 0%;
+    writing-mode: vertical-lr;
+    top: -30%;    
+}
+
+/* RIGHT section CSS */
+
+main .right{
+    display: grid;
+    grid-template-rows: 80% auto;
+    width: 65%;
+    align-items: center;
+}
+
+main .right .top{
+    display: flex;
+    align-items: center;
+
+}
+
+main .right .top img{
+    height: 40rem;
+    filter: drop-shadow(12px 12px 7px #99ffff);
+}
+
+main .left{
+    display: grid;
+    grid-template-rows: 70% auto;
+}
+
+main .right .top .image-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    padding-left: 30%;
+}
+
+main .right .top .image-details h2{
+    font-size: 3rem;
+}
+
+main .right .top ul{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+main .right .bottom p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+@keyframes bgcolor{
+    0%{
+        background:  #351F39 ;
+    }
+    20%{
+        background:  #726A95 ;
+    }
+    40%{
+        background:  #16213E ;
+    }
+    80%{
+        background:  #A0C1B8 ;
+    }
+    100%{
+        background:  #1B2430 ;
+    }
+}
